@@ -21,3 +21,17 @@ function add (a, b) {
 add(5, 10); // Output: 15
 
 
+
+// Return Statement
+
+function name(firstName, lastName){
+    function fullName(){
+        if(firstName !== '' && lastName !== ''){
+            return firstName + ' ' + lastName;
+        } else {
+            return 'Missing name';
+        }
+    }
+    return fullName();
+}
+name('John', 'Doe'); // Output: John Doe
